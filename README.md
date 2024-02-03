@@ -17,3 +17,9 @@ However, you encounter challenges:
 - Data consistency: Changes to user profiles after registration can cause unexpected issues due to mutable fields.
 
 Implement solution using the Builder Pattern to address the issue.
+
+
+#Class Diagram
+![Blank diagram (1)](https://github.com/ErikkaEnaje/Builderpattern/assets/142382057/4b55de64-3035-480b-a91d-0d87cdfb2098)
+
+
