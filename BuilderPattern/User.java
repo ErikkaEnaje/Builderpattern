@@ -1,6 +1,7 @@
 package BuilderPattern;
 import java.util.ArrayList;
 import java.util.List;
+
 public class User {
     protected final String firstName;
     protected final String lastName;
@@ -9,7 +10,7 @@ public class User {
     protected final String address;
     protected final String email;
 
-    private User(UserBuilder userbuilder) {
+    private User(User.UserBuilder userbuilder) {
         this.firstName = userbuilder.firstName;
         this.lastName = userbuilder.lastName;
         this.age = userbuilder.age;
@@ -26,32 +27,32 @@ public class User {
         private String address;
         private String email;
 
-        public UserBuilder firstName(String firstName) {
+        public User.UserBuilder firstName(String firstName) {
             this.firstName = firstName;
             return this;
         }
 
-        public UserBuilder lastName(String lastName) {
+        public User.UserBuilder lastName(String lastName) {
             this.lastName = lastName;
             return this;
         }
 
-        public UserBuilder age(int age) {
+        public User.UserBuilder age(int age) {
             this.age = age;
             return this;
         }
 
-        public UserBuilder phone(long phone) {
+        public User.UserBuilder phone(long phone) {
             this.phone = phone;
             return this;
         }
 
-        public UserBuilder address(String address) {
+        public User.UserBuilder address(String address) {
             this.address = address;
             return this;
         }
 
-        public UserBuilder email(String email) {
+        public User.UserBuilder email(String email) {
             this.email = email;
             return this;
         }
@@ -61,3 +62,4 @@ public class User {
         }
     }
 }
+
